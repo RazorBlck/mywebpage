@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="with=device-width, initial-scale=1.0">
+ <title>BOOKS-R-US BOOK STORE</title>
+  <link rel="stylesheet" href="homes.css">
+ 
+
+  <script type="text/javascript">
+   function swap(id1,id2){
+    var y =document.getElementById(id1).innerHTML;
+    var z =document.getElementById(id2).innerHTML;
+    document.getElementById(id2).innerHTML= y;
+    document.getElementById(id1).innerHTML= z;
+   }
+  </script>
+
+
+
+</head>
+<body>
+   
+<section class="header">
+<nav>
+s
+  <div class="nav-links" id="navLinks">
+    <img src="img/booklogo.jpg">
+    <ul>
+        <li><a href="index.html">HOME</a>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+          </ul>
+        </li>
+        <li><a href="features.html">FEATURES</a>
+          <ul>
+            <li><a href="features.html">FEATURES</a></li>
+            <li><a href="#">INFO</a></li>
+          </ul>
+        </li>
+        <li><a href="contactdet.html">CONTACTS</a>
+          <ul>
+            <li><a href="contactdet.html">CONTACT US</a></li>
+            <li><a href="#">FAQ'S</a></li>
+          </ul>
+        </li>
+    </ul>
+  </div>
+</nav>
+</section>
+
+<section>
+<div class="text-box">
+    <h1><br>BOOKS-R-US LIBRARY</br>
+      WELCOME</h1>
+    <P>The BOOKS-R-US Library Bookstore holds the distinction of being the largest building in the world that serves the express purpose of preserving rare books and manuscripts, which alone undoubtedly makes it one of the best libraries in the world.</P>
+    
+</div>
+                                                
+
+
+
+</section>
+
+<!------ABOUT US ---->
+
+
+<!------ABOUT US ---->
+  <p><b>Current Date and Time is <span id='date-time'></span>.</b></p>
+<script>
+  var dt = new Date();
+  document.getElementById('date-time').innerHTML=dt;
+  </script>
+
+  <section class="slider">
+    <figure>
+      <img src="img/nicebk.jpg">
+      <img src="img/coolbook.jpg">
+      <img src="img/books.jpg">
+      <img src="img/somebook.jpg">
+    </figure>
+    
+  </section>
+
+<h1>About Us</h1>
+<section class="aboutus" onmouseover="swap('objectone','objecttwo')" onmouseout="swap('objecttwo','objectone')">
+
+
+    <div id="objectone">
+      <img src="img/booklogo.jpg">
+    </div>
+    <div id="objecttwo">
+    <p>The BOOKS-R-US library holds a special distinction on our list,<br> as it is the only library of such prominence that its likeness.<br>The design of this national landmark was inspired by the British Museum Reading Room,<br> and includes walls supported by 16 flying buttresses,<br> a vaulted ceiling in the main reading room,<br> and white pine paneling with beautifully detailed carvings of flowers,<br> masks, and mythical creatures. The collection encompasses more than 600,000 items,<br> which is curated by a dedicated 300-member staff.<br> While access to the facility is generally restricted to business,<br> tours are often made available to the public.</p>
+    </div>
+
+    </section>
+
+
+<section class="oursponsors">
+<h1>SPONSORS</h1>
+<div class="row">
+    <div class="oursponsors-col">
+        <img src="img/artcouncil.png">
+
+
+    </div>
+    <div class="oursponsors-col">
+        <img src="img/cc.png">
+
+
+    </div>
+    <div class="oursponsors-col">
+        <img src="img/mcs.jpg">
+
+
+    </div>
+      <div class="oursponsors-col">
+        <img src="img/tamaduni.png">
+
+
+    </div>
+      <div class="oursponsors-col">
+        <img src="img/AT.jpg">
+
+
+    </div>
+
+</div>
+</section>
+<section class="responsive">
+  <div class="left">
+    <h2>CONTACT US</h2>
+    <div class="inside">
+    <form method="POST" action="#">
+       <div class="form-group">
+        <input type="text" placeholder="Full name">
+        <i class="far fa-user"></i>
+       </div>
+       <div class="form-group">
+        <input type="email" placeholder="Email address">
+        <i class="far fa-envelope"></i>
+       </div>
+       <textarea cols="15" rows="5" placeholder="Enter your opinion.."></textarea>
+       <button>Send</button>
+     </form>
+     </div>
+  </div>
+
+  <div class="middle">
+        <h2> SITEMAP</h2>
+        <ul class="site-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="features.html">FEATURES</a></li>
+        <li><a href="contactdet.html">CONTACTS</a></li>
+        </ul>
+  </div>
+
+  <div class="right">
+    <img src="img/booklogo.jpg">
+    <h2>ADDRESS</h2>
+        <p>125, WestLane<br>
+        NAIROBI<br>
+        KENYA<br>
+        NAIROBI</p>
+        <p>Email : booksrus@gmail.com<br>
+        Phone : 0700 000 000</p>
+
+    
+  </div>
+
+  
+</section>
+
+
+    <footer>
+          <p>Copyright � 2022 <a href="#">Books-r-us</a> All rights reserved</p>
+    </footer>
+
+
+<script>
+
+var navLinks = document.getElementById("navLinks");
+function showmenu(){
+    navLinks.style.right="0px"
+}
+function hidemenu(){
+    navLinks.style.right="-200px"
+}
+</script>
+
+</body>
+
+</html>
+
